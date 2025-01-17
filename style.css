@@ -1,0 +1,847 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+    --color-fondo-intercalado: #cce0fd;
+    --raleway-font: 'Raleway', sans-serif;
+    --color-font: #464646;
+}
+html {
+    margin: 0%;
+}
+body {
+    background-color: var(--color-de-fondo);
+    font-family: var(--raleway-font);
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--color-font);
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+
+
+/* ------------------------------ Sección Menú -------------------------------*/
+
+
+.cabecera {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.cabecera__logo {
+    max-width: 2.2rem;
+    width: 1.9rem; 
+    /*height: auto;*/
+    margin-left: 1rem;
+
+}
+
+.cabecera__titulo {
+    font-family: var(--raleway-font);
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--color-font);
+    margin-left: 0.5rem;
+    text-align: center;
+}
+
+/*   -------   Navegación Menú   -------   */
+.navegacion {
+    margin-left: auto;
+    /*display: none; /* Ocultar la navegación en pantallas pequeñas */
+}
+
+.navegacion__lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaciado uniforme entre los elementos de la lista */
+}
+
+.navegacion__elemento:not(:last-child) { 
+    display: none; /* Ocultar todos los otros elementos de navegación */ 
+}
+
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+    
+}
+.navegacion__elemento a:hover {
+    color: #1abc9c; /* Cambia el color al pasar el mouse */
+  }
+
+
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.presentacion__foto {
+    width: 9rem;
+    height: 9rem;
+}
+
+
+
+.presentacion__titulo {
+    
+    font-family: var(--raleway-font);
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--color-font);
+    margin: 0%;
+}
+
+.presentacion__subtitulo {
+    font-family: var(--raleway-font);
+    font-size: 1.1rem;
+    color: var(--color-font);
+    align-self: justify;
+}
+.presentacion__contenedor { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   /* gap: 0.5rem;*/
+    margin-top: 0.2rem;
+}
+
+.redes { 
+    max-width: 20rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0rem;
+    padding-left: 0rem;
+    margin-bottom: 1rem;
+    justify-items: flex-start;
+    
+}
+
+.redes a {  
+    color: var(--color-font);
+    font-family: var(--raleway-font);
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0.2rem;
+    padding: 0%;
+    flex-direction: row;
+    gap: 0rem;
+}
+.redes a:hover {
+    color: #1abc9c; /* Cambia el color al pasar el mouse */
+
+}
+
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi{
+    background-color: var(--color-fondo-intercalado);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.sobre-mi__titulo{
+    font-family: var(--raleway-font);
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--color-font);
+    margin-top: 0.3rem;
+}
+
+.sobre-mi__texto{
+    align-self: justify;
+    margin-top: 0.5rem;
+    
+}
+
+.sobre-mi img{
+    width: 10rem;
+    height: auto;
+}
+
+
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.habilidades__titulo{
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--color-font);
+    margin-top: 1rem;
+}
+
+.habilidades__lista{
+    display: inline-flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    gap: 2.8rem 0.8rem;
+    padding: 0rem;
+}
+
+.habilidades__elemento{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color-font);
+    background-color: var(--color-de-fondo-menu);
+    width: 6rem;
+    padding: 2rem 2rem 0rem 1.5rem; /*arriba, derecha, abajo, izquierda*/
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.habilidades__elemento img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    align-self: flex-start;
+    margin-bottom: 0rem;
+}
+
+/*.habilidades__elemento{
+    display: flex;
+    flex-flow: wrap column;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--color-font);
+    background-color: var(--color-de-fondo-menu);
+    width: 10rem;
+    padding: 2rem 2rem 0rem 1.5rem; /*arriba, derecha, abajo, izquierda*/
+    /*border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.habilidades__elemento p{
+    margin-top: 0.3rem;
+    color: var(--color-font);
+}*/
+
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aficiones__titulo{
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--color-font);
+    margin-top: 1rem;
+}
+.aficiones__lista{
+    display: inline-flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    gap: 2.8rem 0.8rem;
+    padding: 0rem;
+}
+
+.aficiones__elemento{
+    display: flex;
+    flex-flow: wrap column;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: var(--color-de-fondo-menu);
+    width: 6rem;
+    padding: 2rem 2rem 0rem 1.5rem; 
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.aficiones__elemento img {
+    width: 3rem;
+    height: auto;
+    object-fit: contain;
+    align-self: flex-start;
+    margin-bottom: 0rem;
+}
+/*.aficiones__elemento{
+    display: flex;
+    flex-flow: wrap column;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--color-font);
+    background-color: var(--color-de-fondo-menu);
+    width: 10rem;
+    padding: 2rem 2rem 0rem 1.5rem; 
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+*/
+
+
+
+/*------------------------------ Formación Académica --------------------------------*/
+.formacion{ /* contiene el Titulo y la lista de formaciones*/
+    background-color: var(--color-fondo-intercalado);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin-bottom: 1.5rem;*/
+}
+.formacion__titulo{ /* Titulo de la sección*/
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--color-font);
+    margin-top: 1rem;
+    
+}
+.formacion__lista{ /* Contiene los elementos de la formación */
+     padding-left: 0rem;
+    display: flex;
+    flex-direction: column;
+    /*justify-self: center;*/
+   
+    
+}
+.formacion__elemento{ /* Contiene la imagen, nombre y detalle de la formación separado en dos divs, uno para la imagen y otro que contiene los textos */
+    max-width: 19rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--color-font);  
+    padding: 0rem 0rem 0rem 0rem; /*arriba, derecha, abajo, izquierda*/
+    border-radius: 2px;
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);*/
+}
+.formacion__icono{
+    width: 100%;
+    box-sizing: border-box;
+    height: 11rem;
+    display: flex;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    background-color: var(--color-de-fondo-menu);
+}
+.formacion__elemento img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 0rem;
+}
+.formacion__descripcion{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between ;
+    margin-top: 0rem;
+    background-color: var(--color-fondo-intercalado);
+}
+.formacion__elemento h3{
+    margin-top: 0.3rem;
+    margin-bottom: 0rem;
+}
+.formacion__elemento p{
+    font-size: 1.2rem;
+    font-weight: normal;
+    width: 23rem;
+    padding-top: 0rem;
+    margin-top: 0rem;
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.proyectos__titulo {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--color-font);
+    margin-top: 1rem;
+}
+.proyectos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 0rem;
+}
+.contenedor__detalles {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1.7rem;
+    margin-top: 1rem;
+}
+.contenedor__detalles img {
+    width: 70%;
+    box-sizing: border-box;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 0rem;
+}
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+    background-color: var(--color-fondo-intercalado);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.contacto__titulo {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: var(--color-font);
+    margin-top: 1rem;
+}
+.Contacto__img {
+    display: none;
+}
+.contacto__texto {
+    font-size: 1.1rem;
+    color: var(--color-font);
+    align-self: justify;
+    margin-top: 0.5rem;
+    margin-left: 0.8rem;
+    width: 18rem;
+}
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.contacto__formulario input, textarea {
+    width: 17rem;
+    height: 2rem;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #6a11cb, #2575fc) border-box;
+                
+}
+input:focus, textarea:focus {
+    background: linear-gradient(white, white) padding-box, 
+                
+                linear-gradient(to right, #ff7e5f, #feb47b) border-box;
+    outline: none;
+}
+.contacto__formulario textarea {
+    height: 7rem;
+}
+
+.contacto__boton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.contacto__boton:hover {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+
+    /*---------------- Cabecera ----------------*/
+    .cabecera {
+        flex-direction: row;
+        width: 100%;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    /*   -------   Navegación Menú   -------   */
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+    /*---------------- Presentacion ----------------*/
+
+    .presentacion {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .presentacion__foto {
+        width: 146px;
+        height: 146px;
+        border-radius: 50%;
+    }
+
+    /*---------------- Habilidades ----------------*/
+    .habilidades__lista {
+        max-width: 50rem;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        justify-content: center;
+    }
+
+    /*---------------- Aficiones ----------------*/
+
+    .aficiones__lista {
+        max-width: 50rem;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        justify-content: center;
+    }
+
+    /*---------------- Formacion ----------------*/
+
+
+    .formacion__lista{
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1.5rem;
+        margin-top: 1rem;
+        padding: 0;
+        
+        
+    }
+    .formacion__elemento{ 
+        display: flex;
+        flex-direction: column; 
+        align-content: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: var(--color-font);
+        width: 15rem;
+        margin: 0;
+        padding: 0;
+
+    }
+    .formacion__icono{
+        width: 15rem;
+        height: 11rem;
+        display: flex;
+        object-fit: contain;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        background-color: var(--color-de-fondo-menu);
+        border-radius: 5px;
+    }
+    .formacion__elemento img {
+        width: 15rem;
+        height: 100%;
+        object-fit: contain;
+        margin-bottom: 0rem;
+    }
+    /*.formacion__nombre {
+        max-width: 100%;
+        box-sizing: border-box;
+    }*/
+    .formacion__detalle{
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /*---------------- Formulario Contacto ----------------*/
+
+    .contacto {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    .Contacto__img {
+        display: flex;
+        width: 27rem;
+        height: 36rem;
+        border-radius: 5%;
+    }
+    .contacto__contenedor {
+        width: 48rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .contacto__texto {
+        font-size: 1.1rem;
+        color: var(--color-font);
+        align-self: justify;
+        margin-top: 0.5rem;
+        margin-left: 0.8rem;
+        width: 18rem;
+    }
+    .contacto__formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.8rem;
+        margin-top: 1rem;
+    }
+
+    
+    
+}
+
+    
+
+
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+    
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+
+    /*   -------   Navegación Menú   -------   */
+    .navegacion {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-left: auto;
+        margin-top: 0;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    /* Mostrar todos los elementos de la lista */
+  .navegacion__elemento:not(:last-child) {
+    display: flex; /* Asegura que todos los elementos sean visibles */
+  }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+
+    /*---------------- Presentacion ----------------*/
+
+    .presentacion {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 1rem;
+    }
+    
+    .presentacion__foto {
+        width: 368px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    /*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades__lista{ 
+    max-width: fit-content;   
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1rem;
+    
+}
+
+.habilidades__elemento img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    align-self: flex-start;
+    margin-bottom: 0rem;
+}
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+.aficiones__lista{
+    max-width: fit-content;
+    display: inline-flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    gap: 2.8rem 0.8rem;
+    padding: 0rem;
+}
+
+
+/* 
+------------------------------ Formación Académica -------------------------------- */
+.formacion__lista{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.5rem;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.formacion__elemento{ 
+    display: flex;
+    flex-direction: column; 
+    align-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color-font);
+    width: 19rem;
+    margin: 0;
+    padding: 0;
+
+}
+.formacion__icono{
+    width: 18rem;
+    height: 11rem;
+    display: flex;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    background-color: var(--color-de-fondo-menu);
+    border-radius: 5px;
+}
+
+/* ------------------------------ Sección de Proyectos --------------------------------*/
+
+
+
+/* ------------------------------ Sección de Contacto ---------------------------------*/
+.Contacto__img {
+    display: flex;
+    width: 30rem;
+    height: 36rem;
+    border-radius: 5%;
+}
+.contacto__contenedor {
+    width: 64rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.contacto__texto {
+    font-size: 1.1rem;
+    color: var(--color-font);
+    align-self: justify;
+    margin-top: 0.5rem;
+    margin-left: 0.8rem;
+    width: 25rem;
+}
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+    margin-top: 1rem;
+}
+
+.contacto__formulario input, textarea {
+    width: 23rem;
+    height: 2rem;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, #6a11cb, #2575fc) border-box;
+                
+}
+
+
+}
